@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #fff8ec;
+  color: #3d2c1e;
+  font-family: 'Jua', 'Noto Sans KR', system-ui, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  user-select: none;
+}
+
+input,
+textarea {
+  user-select: text;
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex min-h-[64px] items-center justify-center gap-2 rounded-3xl px-8 text-2xl shadow-[0_6px_0_rgba(0,0,0,0.15)] transition active:translate-y-1 active:shadow-[0_2px_0_rgba(0,0,0,0.15)] disabled:opacity-40;
+  }
+  .btn-primary {
+    @apply btn bg-sun text-[#5a3a00];
+  }
+  .btn-green {
+    @apply btn bg-leaf text-white;
+  }
+  .btn-soft {
+    @apply btn bg-white text-[#5a3a00] border-4 border-[#f3dfb5];
+  }
+  .card {
+    @apply rounded-3xl bg-white p-5 shadow-[0_6px_0_rgba(0,0,0,0.08)];
+  }
+  .tbtn {
+    @apply inline-flex items-center justify-center rounded-lg bg-slate-100 px-3 py-1.5 text-sm text-slate-700 hover:bg-slate-200 disabled:opacity-40;
+  }
+}
+
+/* 맞혔을 때 짧은 축하 */
+@keyframes pop {
+  0% { transform: scale(0.4); opacity: 0; }
+  60% { transform: scale(1.15); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+.pop { animation: pop 0.45s ease-out both; }
+
+@keyframes floatUp {
+  0% { transform: translateY(0) rotate(0); opacity: 1; }
+  100% { transform: translateY(-260px) rotate(40deg); opacity: 0; }
+}
+.confetti {
+  position: absolute;
+  bottom: 30%;
+  font-size: 40px;
+  animation: floatUp 1.4s ease-out forwards;
+  pointer-events: none;
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0); }
+  25% { transform: rotate(-4deg); }
+  75% { transform: rotate(4deg); }
+}
+.wiggle { animation: wiggle 0.5s ease-in-out; }
+
+@keyframes bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+.bob { animation: bob 2s ease-in-out infinite; }

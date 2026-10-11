@@ -1,0 +1,147 @@
+{
+  "doctor": {
+    "tools": [["주사기","a toy-like syringe"],["약 상자","a first-aid medicine box with a red cross"],["체온계","a digital thermometer"],["엑스레이 사진","an x-ray film showing a hand skeleton"]],
+    "bgs": [["병원 로비","a bright hospital lobby with a reception desk, chairs and plants"],["구급차","a view inside an ambulance with equipment shelves and a stretcher"]],
+    "outfits": [["수술복","teal surgical scrubs with a surgical cap and a face mask pulled down under the chin"],["어린이 병원 가운","a colorful pastel doctor coat with cartoon animal buttons and a stethoscope"]]
+  },
+  "nurse": {
+    "tools": [["주사기","a toy-like syringe"],["청진기","a stethoscope"],["붕대","a roll of white bandage and tape"],["약 카트","a small medicine cart with bottles"]],
+    "bgs": [["간호사실","a nurses station with a counter, computers and charts"],["어린이 병동","a cheerful children's hospital room with toys and a bed"]],
+    "outfits": [["하늘색 간호복","a light blue nurse uniform with a small badge and nurse cap"],["따뜻한 카디건 간호복","a white nurse uniform with a warm pink cardigan"]]
+  },
+  "firefighter": {
+    "tools": [["소방 헬멧","a red firefighter helmet"],["물 호스","a coiled fire hose with a brass nozzle"],["손도끼","a firefighter axe with a red handle"],["무전기","a walkie-talkie radio"]],
+    "bgs": [["불난 건물 앞","a street in front of a tall building with firefighters' truck, no flames close up, safe cartoon style"],["소방 훈련장","a firefighter training yard with a tower, cones and hoses"]],
+    "outfits": [["구조 대원복","an orange rescue uniform with reflective stripes and a rescue helmet"],["소방 정복","a navy dress uniform with golden buttons and a cap"]]
+  },
+  "police": {
+    "tools": [["경찰봉","a police baton"],["무전기","a walkie-talkie radio"],["순찰차 모형","a toy police patrol car"],["안전 깃발","a traffic guidance paddle sign"]],
+    "bgs": [["횡단보도","a sunny crosswalk at a school zone with traffic lights"],["순찰차 안","the inside of a police car seen from the driver seat with a city street ahead"]],
+    "outfits": [["교통 경찰복","a bright reflective traffic police vest over a uniform with a white helmet"],["경찰 정복","a dark blue formal police uniform with a cap, tie and badge"]]
+  },
+  "chef": {
+    "tools": [["국자","a soup ladle"],["칼과 도마","a chef knife on a cutting board with vegetables"],["케이크","a cute decorated cake"],["냄비","a big cooking pot with steam"]],
+    "bgs": [["시장","a lively open-air food market with vegetables and fruits"],["식당 홀","a cozy restaurant dining room with tables"]],
+    "outfits": [["빨간 조리복","a red chef jacket with a white neckerchief and a chef hat"],["파란 앞치마","a blue apron over a white shirt with a folded paper chef hat"]]
+  },
+  "baker": {
+    "tools": [["크루아상","a golden croissant"],["케이크","a strawberry cake"],["오븐 장갑","a pair of oven mitts"],["반죽 볼","a mixing bowl with dough and a whisk"]],
+    "bgs": [["빵 공장","a bakery kitchen with a big oven, trays and flour bags"],["카페 빵집","a cozy cafe bakery with a display case of cakes"]],
+    "outfits": [["하얀 제빵복","a clean white baker uniform with a tall baker hat"],["꽃무늬 앞치마","a flower-patterned apron over a striped shirt with a bandana"]]
+  },
+  "scientist": {
+    "tools": [["시험관","test tubes in a rack with colorful liquids"],["플라스크","a round flask bubbling with green liquid"],["망원경","a telescope on a tripod"],["지구본","a small globe"]],
+    "bgs": [["천문대","an observatory dome with a big telescope and night sky"],["식물 연구실","a greenhouse research room with plants and tools"]],
+    "outfits": [["파란 실험복","a light blue lab coat with a pocket full of pens"],["우주 과학자 복","a white jumpsuit with a space-agency style patch and goggles on the head"]]
+  },
+  "teacher": {
+    "tools": [["분필","colorful chalk sticks"],["지구본","a small globe"],["종","a classroom handbell"],["출석부","a clipboard with an attendance sheet and a pen"]],
+    "bgs": [["도서관","a school library with bookshelves and reading tables"],["운동장","a school playground with swings and a slide"]],
+    "outfits": [["체육 선생님 복","a sporty tracksuit with a whistle around the neck"],["봄 선생님 복","a light yellow blouse with a scarf and a lanyard"]]
+  },
+  "painter": {
+    "tools": [["이젤","an easel with a small canvas"],["물감 튜브","colorful paint tubes"],["붓 통","a cup of paintbrushes"],["그림 액자","a framed landscape painting"]],
+    "bgs": [["미술관","an art gallery with framed paintings on white walls"],["꽃밭 야외","a flower meadow with a hill and sunny sky"]],
+    "outfits": [["파란 작업복","a blue painter's smock splashed with colorful paint"],["베레모 정장","a striped shirt with a black beret and a red scarf"]]
+  },
+  "athlete": {
+    "tools": [["농구공","a basketball"],["야구 글러브","a baseball glove with a ball"],["메달","a gold medal with a ribbon"],["트로피","a golden trophy"]],
+    "bgs": [["체육관","an indoor gymnasium with a basketball court"],["수영장","an indoor swimming pool with lanes"]],
+    "outfits": [["농구복","a basketball jersey and shorts with sneakers and wristbands"],["달리기 복","a runner's tank top, shorts and running shoes with a number bib"]]
+  },
+  "astronaut": {
+    "tools": [["우주 헬멧","a white space helmet with a golden visor"],["우주 깃발","a small flag on a pole planted in a moon rock"],["망원경","a space telescope"],["인공위성","a small satellite with solar panels"]],
+    "bgs": [["달 표면","the surface of the moon with craters and the earth in the sky"],["우주 정거장 안","the inside of a space station with windows showing earth"]],
+    "outfits": [["주황 우주복","an orange spacesuit with patches"],["훈련복","a blue astronaut training jumpsuit with a zipper and patches"]]
+  },
+  "farmer": {
+    "tools": [["삽","a garden shovel"],["물뿌리개","a watering can"],["옥수수 바구니","a basket of corn"],["트랙터 모형","a toy red tractor"]],
+    "bgs": [["논","a golden rice paddy field with mountains"],["과수원","an apple orchard with ripe red apples and a ladder"]],
+    "outfits": [["밀짚모자 작업복","a long-sleeve work shirt, a wide straw hat and gloves"],["비 오는 날 농부복","a green raincoat and rain boots"]]
+  },
+  "vet": {
+    "tools": [["강아지 인형","a cute toy puppy"],["동물 체중계","a pet weighing scale"],["먹이 그릇","a pet food bowl with kibble"],["주사기","a small syringe"]],
+    "bgs": [["동물병원 대기실","a pet clinic waiting room with a cat and a dog"],["동물 농장","a small petting farm with a rabbit, a sheep and a barn"]],
+    "outfits": [["초록 수의사복","a green scrub set with paw-print pattern"],["하얀 수의사 가운","a white coat over a blue shirt with a stethoscope"]]
+  },
+  "pilot": {
+    "tools": [["조종 핸들","an airplane control yoke"],["지도와 나침반","a world map and a compass"],["헤드셋","a pilot headset"],["선글라스","aviator sunglasses"]],
+    "bgs": [["공항","an airport runway with a parked airplane and tower"],["구름 위","above the clouds with a blue sky and a flying airplane wing"]],
+    "outfits": [["비행복","a green flight jacket with patches and a scarf"],["기장 정복","a white shirt with epaulettes, a tie and a captain cap"]]
+  },
+  "architect": {
+    "tools": [["건물 모형","a small model of a modern house"],["컴퍼스","a drawing compass and a pencil"],["안전모","a yellow hard hat"],["줄자","a tape measure"]],
+    "bgs": [["공사 현장","a construction site with a crane and a half-built building"],["도시 전망","a skyline view of a modern city with tall buildings"]],
+    "outfits": [["공사 현장 복","a safety vest over a work shirt and a hard hat"],["사무실 복","a white shirt with suspenders and a bow tie holding a rolled plan"]]
+  },
+  "singer": {
+    "tools": [["기타","an acoustic guitar"],["헤드폰","big headphones"],["음표","glowing music notes"],["상패","a golden record award"]],
+    "bgs": [["녹음실","a recording studio with a microphone and soundproof walls"],["거리 공연장","a street performance corner with colorful lights"]],
+    "outfits": [["반짝이 무대복","a sparkly sequin stage outfit with a cape"],["귀여운 무대복","a colorful hoodie with star patches and sneakers"]]
+  },
+  "librarian": {
+    "tools": [["책","an open storybook"],["도장","a library stamp"],["책갈피","colorful bookmarks"],["돋보기","a magnifying glass"]],
+    "bgs": [["어린이 도서관","a kids reading room with cushions and colorful bookshelves"],["책 창고","a quiet book archive with tall shelves and a rolling ladder"]],
+    "outfits": [["하늘색 사서복","a light blue vest with a white blouse and a name tag"],["스웨터 사서복","a warm green sweater with a long skirt/pants and a scarf"]]
+  },
+  "postman": {
+    "tools": [["우체통","a red mailbox"],["택배 상자","a parcel box with string"],["우표","big colorful stamps"],["자전거","a delivery bicycle with a basket of letters"]],
+    "bgs": [["우체국 안","a post office interior with a counter and parcels"],["골목길 배달","a small neighborhood alley with houses and mailboxes"]],
+    "outfits": [["비 오는 날 배달복","a red raincoat with a hood and rain boots"],["여름 우체부복","a red short-sleeve shirt with shorts, a cap and a mail bag"]]
+  },
+  "hairdresser": {
+    "tools": [["드라이기","a hair dryer"],["거울","a handheld mirror"],["헤어 롤","colorful hair rollers"],["샴푸","a shampoo bottle with bubbles"]],
+    "bgs": [["머리 감는 곳","a salon shampoo area with sinks"],["패션쇼 무대","a fashion show runway with lights"]],
+    "outfits": [["줄무늬 미용복","a striped shirt with a black apron and a comb in the pocket"],["꽃무늬 미용복","a floral blouse with a pink apron"]]
+  },
+  "photographer": {
+    "tools": [["삼각대","a camera tripod"],["사진","a stack of instant photos"],["렌즈","a camera lens"],["조명","a studio softbox light"]],
+    "bgs": [["꽃밭 야외","a flower garden with soft sunlight"],["갤러리","a photo gallery with framed photos on the wall"]],
+    "outfits": [["여행 사진가 복","a hiking jacket with a hat and a camera bag"],["스튜디오 복","a black turtleneck with a camera on the neck strap"]]
+  },
+  "webtoon": {
+    "tools": [["펜 태블릿","a large drawing tablet with a stylus"],["스케치북","a sketchbook with cartoon drawings"],["지우개와 연필","a pencil and an eraser"],["말풍선","a speech-bubble shaped sticker with no text"]],
+    "bgs": [["컴퓨터 작업실","a creative desk with two monitors showing drawings, in a cozy room"],["카페 작업","a cozy cafe table by a window with a laptop"]],
+    "outfits": [["후드 작업복","a plain oversized solid-color hoodie with headphones around the neck"],["작업 셔츠","a plain button shirt with rolled sleeves and a pen in the pocket"]]
+  },
+  "programmer": {
+    "tools": [["모니터","a monitor showing colorful code blocks"],["키보드","a colorful keyboard"],["작은 로봇","a cute small robot toy"],["USB","a big USB stick"]],
+    "bgs": [["서버실","a data center room with rows of blinking servers"],["카페 코딩","a cozy cafe table with a laptop and a coffee"]],
+    "outfits": [["후드티","a plain gray hoodie with a lanyard"],["셔츠","a plain checked shirt with sleeves rolled and glasses"]]
+  },
+  "roboticist": {
+    "tools": [["로봇 팔","a small robot arm"],["드라이버","a screwdriver set"],["기어","colorful gears"],["로봇 강아지","a cute robot dog"]],
+    "bgs": [["로봇 대회장","a robot competition arena with robots and cheering kids"],["로봇 공장","a factory with robot arms assembling parts"]],
+    "outfits": [["작업복","a gray work jumpsuit with a utility belt and gloves"],["연구원 복","a white lab coat with a circuit board patch and goggles"]]
+  },
+  "busdriver": {
+    "tools": [["버스 모형","a toy city bus"],["교통카드","a transit card"],["안내 방송 마이크","a bus announcement microphone"],["버스 정류장 표지판","a bus stop sign with no text"]],
+    "bgs": [["버스 정류장","a bus stop with a shelter on a sunny street"],["버스 차고지","a bus depot with many parked buses"]],
+    "outfits": [["여름 기사복","a short-sleeve uniform shirt with a driver cap"],["겨울 기사복","a warm dark jacket with a scarf and a driver cap"]]
+  },
+  "dentist": {
+    "tools": [["치아 거울","a dental mirror"],["양치컵","a cup with a toothbrush"],["치약","a toothpaste tube"],["치아 모형","a large tooth model with a toothbrush"]],
+    "bgs": [["치과 대기실","a dental clinic waiting room with toys"],["양치 교실","a classroom teaching tooth brushing with a giant tooth model"]],
+    "outfits": [["파란 치과복","blue scrubs with a face mask under the chin and a dental loupe headband"],["하얀 치과 가운","a white coat with a tooth-shaped badge"]]
+  },
+  "pharmacist": {
+    "tools": [["약병","a medicine bottle"],["알약 통","a pill organizer box"],["저울","a small pharmacy scale"],["비타민","a jar of vitamin gummies"]],
+    "bgs": [["약 조제실","a pharmacy back room with shelves and jars"],["동네 약국","a neighborhood pharmacy storefront"]],
+    "outfits": [["녹색 약사복","a green pharmacist coat with a cross badge"],["하얀 약사 가운","a white coat over a blue shirt with a name tag"]]
+  },
+  "fisher": {
+    "tools": [["그물","a fishing net"],["물고기 바구니","a basket with fish"],["닻","a ship anchor"],["구명조끼","a life vest"]],
+    "bgs": [["부두","a harbor dock with boats and crates"],["어시장","a seafood market with fish on ice"]],
+    "outfits": [["어부 작업복","orange waterproof overalls with boots"],["선장 복","a blue captain jacket with a captain hat"]]
+  },
+  "carpenter": {
+    "tools": [["톱","a hand saw"],["대패","a wood plane"],["못과 망치","nails and a hammer"],["줄자","a tape measure"]],
+    "bgs": [["집 짓는 곳","a house under construction with wooden frames"],["가구 공방","a furniture workshop with chairs and tables"]],
+    "outfits": [["멜빵 작업복","denim overalls with a white t-shirt and a pencil behind the ear"],["안전 작업복","a safety vest with a hard hat and work gloves"]]
+  },
+  "zookeeper": {
+    "tools": [["사료","a bag of animal feed"],["물통","a water bucket with a hose"],["쌍안경","binoculars"],["아기 동물 인형","a cute toy baby elephant"]],
+    "bgs": [["사파리","a safari savanna with a lion, zebras and acacia trees"],["펭귄 관","a penguin habitat with ice, water and penguins"]],
+    "outfits": [["초록 사육사복","a green zookeeper uniform with an animal-paw badge"],["야외 탐험복","a khaki vest, shorts, a safari hat and binoculars"]]
+  }
+}
