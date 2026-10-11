@@ -63,7 +63,12 @@
 **손으로 확인 (누구나)**
 1. `내주소/teacher`에서 **아이디와 비밀번호로 가입**하고 **학급 만들기** → 6자리 코드와 QR이 나오면 성공입니다.
 2. 다른 기기(또는 시크릿 창)에서 `내주소`를 열어 **코드와 번호**로 입장해 보세요.
-3. Supabase **Table Editor**에서 표마다 **RLS가 켜져 있는지**, **Advisors → Security**에 경고가 없는지 봅니다.
+3. Supabase **Table Editor**에서 표마다 **RLS가 켜져 있는지** 봅니다. **Advisors → Security**에는 노란 경고(WARN)가 몇 개 나오는데, 아래 세 가지는 이 앱 구조상 **정상**입니다. (학생이 이름 없이 "익명 로그인"을 쓰고, 각 함수가 안에서 본인 확인을 하기 때문입니다.)
+   - *Anonymous Access Policies* (익명 사용자에게 적용되는 접근 규칙)
+   - *Signed-In Users Can Execute SECURITY DEFINER Function* (로그인한 학생이 입장·저장 함수를 쓸 수 있음)
+   - *Leaked Password Protection Disabled* (유출 비밀번호 검사. Supabase **Pro 요금제 기능**이라 무료에서는 켤 수 없어요. 대신 교사 비밀번호를 길게 만드세요.)
+
+   빨간 **ERROR**(예: *RLS Disabled in Public*)가 보이면 6단계의 자동 점검을 실행하고 결과를 도움 받을 분께 보여 주세요.
 
 **자동으로 확인 (컴퓨터에서, 선택)**
 ```bash

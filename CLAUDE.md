@@ -18,6 +18,7 @@
 - 학생 이름·연락처·성별·음성 녹음 등 **개인정보를 저장하는 기능을 추가하지 않습니다.** 앱은 번호와 학습 기록만 저장합니다.
 - 이미 학생 기록이 있는 Supabase 프로젝트의 데이터·스키마·RLS를 바꾸기 전에는 백업과 되돌리기 SQL을 먼저 만들고 선생님 확인을 받습니다. 삭제·초기화처럼 되돌릴 수 없는 일은 대상과 이유를 먼저 설명하고 확인받습니다.
 - RLS(행 수준 보안)를 끄거나 약하게 만들지 않습니다. 접근 규칙을 바꾸면 `npm run verify:install`로 "로그인 없는 사람, 다른 학생, 다른 선생님이 기록을 못 보는지" 다시 시험합니다.
+- Supabase Advisors(보안 점검)의 노란 경고 중 "Anonymous Access Policies", "SECURITY DEFINER 함수 실행 가능(authenticated)", "Leaked Password Protection Disabled(Pro 요금제 기능)"는 이 앱 구조상 예상되는 경고입니다. 새로운 종류의 경고나 ERROR(예: RLS Disabled)가 나오면 원인을 확인하고 선생님께 알립니다. `join_class`, `class_size` 같은 함수는 로그인 없는 사람(anon)이 호출하지 못하게 `revoke … from public, anon`을 유지합니다.
 - Supabase 함수·트리거에서 오류 코드 `40001`, `40P01`을 쓰지 않습니다. 서버 CPU를 채우는 무한 재시도가 생깁니다. 상태가 바뀐 경우는 `BR001`을 씁니다(`npm run check:sql`이 막아 줍니다).
 - `supabase/setup.sql`은 개별 SQL 파일을 이어 붙인 결과입니다. 개별 파일을 고친 뒤 `npm run build:sql`로 다시 만듭니다.
 - 학교·기관 관리 정책과 OS 보안 기능은 끄거나 우회하지 않습니다. 막히면 멈추고 보고합니다.
