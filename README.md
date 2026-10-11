@@ -8,6 +8,8 @@
 - 교사 화면: `/teacher`
 
 > **선생님들께**: 이 저장소는 누구나 내려받아 **자기 Supabase에 연결해서** 쓰는 복사본입니다. 학생 기록은 그 선생님의 Supabase에만 저장됩니다. 설치 방법은 **[SETUP.md](SETUP.md)** 를 보세요. (가입은 Supabase와 Vercel, 두 곳이면 됩니다.)
+>
+> **내려받기**: [ZIP 파일 내려받기](https://github.com/duruyeofin-rgb/batchim-reading-template/archive/refs/heads/main.zip) (GitHub 계정이 없어도 됩니다. 압축을 풀면 `batchim-reading-template-main` 폴더가 나옵니다.) GitHub 계정이 있다면 이 페이지 위쪽의 **Use this template** 버튼으로 내 계정에 복사본을 만들 수 있어요.
 
 > 학습이 먼저이고 게임 보상은 뒤에 옵니다. 별은 돈처럼 쓰는 것이 아니라 모으는 것이고, 정해진 조건이 채워지면 직업의 세계가 하나씩 열립니다.
 >
