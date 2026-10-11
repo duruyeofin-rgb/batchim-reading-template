@@ -129,7 +129,7 @@ begin
   return s;
 end $$;
 
-revoke all on function public.join_class(text, int) from public;
+revoke all on function public.join_class(text, int) from public, anon;
 grant execute on function public.join_class(text, int) to authenticated;
 
 -- 추가: 번호 선택 화면에 필요한 학급 인원 수 조회 (코드가 맞을 때만 숫자를 돌려줌)
@@ -143,5 +143,5 @@ begin
   return n;  -- 코드가 틀리면 null
 end $$;
 
-revoke all on function public.class_size(text) from public;
+revoke all on function public.class_size(text) from public, anon;
 grant execute on function public.class_size(text) to authenticated;
