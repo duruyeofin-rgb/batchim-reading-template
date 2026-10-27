@@ -118,8 +118,8 @@ async function run() {
   }
   if (!ok(!!cls, '교사가 학급을 만들 수 있음')) stop('중복 코드로 학급 생성에 실패했어요.')
 
+  const createdClasses = [{ client: teacherA, id: cls.id }]
   try {
-
     await studentB.auth.signInAnonymously()
     const size = await studentA.rpc('class_size', { p_code: cls.code })
     ok(!size.error && size.data === 3, '학급 코드로 인원 수를 조회할 수 있음', size.error?.message)
@@ -176,7 +176,9 @@ async function run() {
         ok(denied(protectedUpdate), `보호 열 ${Object.keys(patch)[0]} 수정 차단 (학생/교사)`, protectedUpdate.error?.message)
       }
     }
-    const mkClass = await studentA.from('classes').insert({ name: `verify-x-${tag}`, code: '999999', student_count: 1 })
+    const mkClass = await studentA.from('classes').insert({ name: `verify-x-${tag}`, code: '999999', student_count: 1 }).select('id').single()
+    // 정책이 잘못되어 생성이 성공한 경우에도 이번 요청이 만든 ID만 정리합니다.
+    if (!mkClass.error && mkClass.data?.id) createdClasses.push({ client: studentA, id: mkClass.data.id })
     ok(denied(mkClass), '학생(익명)은 학급을 만들 수 없음')
     const noSize = await nobody.rpc('class_size', { p_code: cls.code })
     const noJoin = await nobody.rpc('join_class', { p_code: cls.code, p_number: 3 })
@@ -204,10 +206,13 @@ async function run() {
     const removeStudent = await teacherA.from('students').delete().eq('id', B.id).select('id')
     ok(!removeStudent.error && removeStudent.data?.length === 1, '교사 학생 삭제', removeStudent.error?.message)
   } finally {
-    // 6) 정리: 점검용 학급(과 학생·기록) 지우기
-    const del = await teacherA.from('classes').delete().eq('id', cls.id)
-    const gone = await teacherA.from('classes').select('id').eq('id', cls.id)
-    ok(!del.error && empty(gone), '점검용 학급을 지웠음', del.error?.message)
+    // 6) 정리: 이번 실행의 INSERT 응답으로 받은 학급 ID만 삭제합니다.
+    // 이름·코드 패턴으로 기존 학급을 찾아 삭제하지 않습니다.
+    for (const { client, id } of createdClasses) {
+      const del = await client.from('classes').delete().eq('id', id)
+      const gone = await client.from('classes').select('id').eq('id', id)
+      ok(!del.error && empty(gone), '점검용 학급을 지웠음', del.error?.message)
+    }
 
   }
 
