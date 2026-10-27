@@ -15,7 +15,8 @@
     "test:entry:browser": "node scripts/entry-browser-check.mjs",
     "build:sql": "node scripts/build-setup-sql.mjs",
     "check:sql": "node scripts/build-setup-sql.mjs --check",
-    "verify:install": "node scripts/verify-install.mjs"
+    "verify:install": "node scripts/verify-install.mjs",
+    "test:install": "tsx --test scripts/install-permissions.test.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.45.0",
