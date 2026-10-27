@@ -114,6 +114,13 @@ create policy student_attempts_insert on public.attempts for insert
 create policy student_attempts_select on public.attempts for select
   using (exists (select 1 from public.students s where s.id = attempts.student_id and s.auth_uid = auth.uid()));
 
+-- 신규 프로젝트의 기본 권한 설정과 무관하게 앱 호출에 필요한 권한을 명시합니다.
+-- 행 접근은 위 RLS 정책이 제한하며, 학생 생성은 join_class 함수로만 합니다.
+grant select, insert, delete on public.classes to authenticated;
+grant select, delete on public.students to authenticated;
+grant select, insert, update, delete on public.progress to authenticated;
+grant select, insert, delete on public.attempts to authenticated;
+
 -- 안전장치: students 는 지정한 열만 수정할 수 있게 합니다.
 -- (학생이 class_id·auth_uid 를 바꿔서 다른 학급으로 옮겨 가는 것을 막습니다)
 revoke update on public.students from anon, authenticated;
